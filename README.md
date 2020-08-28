@@ -10,4 +10,4 @@ The artworks are for sale and you can pick the size & frame you wish for.
 After that Shelly will contact you to be sure about your reservation.
 
 
-[To the site](https://shelly-artgallery.com/)
+[Shelly Art Gallery](https://shelly-artgallery.com/)
