@@ -1,0 +1,997 @@
+@font-face {
+  font-family: "Raisonne";
+  src: url("http://shelly.test/wp-content/themes/woocommerce-theme/fonts/Raisonne-DemiBold.ttf");
+}
+
+.color1 {
+  color: #F1D2C8;
+  color: #111;
+  color: #D5F2DB;
+  color: #cca69a;
+  color: coral;
+  color: #944994;
+}
+
+a {
+  color: none;
+}
+
+@-webkit-keyframes opacityNav {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes opacityNav {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 30%;
+    width: 0%;
+  }
+
+  to {
+    opacity: 100%;
+    width: 50%;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 30%;
+    width: 0%;
+  }
+
+  to {
+    opacity: 100%;
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes firstSpanOpen {
+  0% {
+    transform: translate3d(0px, 10%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, -39%, 0px);
+  }
+}
+
+@keyframes firstSpanOpen {
+  0% {
+    transform: translate3d(0px, 10%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, -39%, 0px);
+  }
+}
+
+@-webkit-keyframes secondSpanOpen {
+  0% {
+    transform: translate3d(0px, -210%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, -139%, 0px);
+  }
+}
+
+@keyframes secondSpanOpen {
+  0% {
+    transform: translate3d(0px, -210%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, -139%, 0px);
+  }
+}
+
+@-webkit-keyframes firstDiscover {
+  0% {
+    transform: translate3d(0px, 100%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, 25%, 0px);
+  }
+}
+
+@keyframes firstDiscover {
+  0% {
+    transform: translate3d(0px, 100%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, 25%, 0px);
+  }
+}
+
+@-webkit-keyframes secondDiscover {
+  0% {
+    transform: translate3d(0px, -150%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, -75%, 0px);
+  }
+}
+
+@keyframes secondDiscover {
+  0% {
+    transform: translate3d(0px, -150%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, -75%, 0px);
+  }
+}
+
+@-webkit-keyframes firstNew {
+  0% {
+    transform: translate3d(0px, 35%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, -6%, 0px);
+  }
+}
+
+@keyframes firstNew {
+  0% {
+    transform: translate3d(0px, 35%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, -6%, 0px);
+  }
+}
+
+@-webkit-keyframes secondNew {
+  0% {
+    transform: translate3d(0px, -180%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, -106%, 0px);
+  }
+}
+
+@keyframes secondNew {
+  0% {
+    transform: translate3d(0px, -180%, 0px);
+  }
+
+  100% {
+    transform: translate3d(0px, -106%, 0px);
+  }
+}
+
+@-webkit-keyframes loadLine {
+  from {
+    height: 0vh;
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+    height: 68vh;
+  }
+}
+
+@keyframes loadLine {
+  from {
+    height: 0vh;
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+    height: 68vh;
+  }
+}
+
+@-webkit-keyframes point {
+  0% {
+    opacity: 0%;
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes point {
+  0% {
+    opacity: 0%;
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes pointOut {
+  0% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 0%;
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes pointOut {
+  0% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 0%;
+    transform: translateX(-10px);
+  }
+}
+
+body {
+  background-color: #F1D2C8 !important;
+}
+
+.woocommerce-message {
+  display: none;
+}
+
+.nav {
+  height: 100%;
+  width: 4%;
+  position: fixed;
+  z-index: 200;
+  /* Stay in place */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  padding-top: 60px;
+  transition: 0.4s all ease;
+}
+
+.nav .innerNav {
+  display: block;
+  list-style-type: none;
+  color: #F1D2C8;
+  padding: 21vh 0vw 5vh 0vw;
+  transition: 0.4s all ease;
+  position: relative;
+}
+
+.nav .innerNav .liC {
+  margin-right: 1vw;
+}
+
+.nav .innerNav li a {
+  cursor: pointer;
+}
+
+.nav .innerNav .circle {
+  width: 4.65vw;
+  height: 4.7vw;
+  background-color: #F1D2C8;
+  cursor: pointer;
+  border: 5.1px #111 solid;
+  border-radius: 50%;
+  margin-bottom: 1.8vw;
+  margin-left: 0.2vw;
+  transition: 0.5s all ease;
+}
+
+.nav .innerNav .circle .line {
+  border: 2px solid black;
+  position: relative;
+  top: 58%;
+  left: 20%;
+  transform: translateY(-13px);
+  width: 35px;
+  height: 3px;
+  transition: 0.4s all ease;
+}
+
+.nav .innerNav .circle .line::before {
+  content: "";
+  border: 2.5px solid black;
+  transform: translateY(8px) translateX(-2px);
+  width: 27px;
+  height: 4px;
+  position: absolute;
+  transition: 0.4s all ease;
+}
+
+.nav .innerNav .circle .line::after {
+  content: "";
+  border: 2px solid black;
+  transform: translateY(18.5px) translateX(-2px);
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  transition: 0.4s all ease;
+}
+
+.nav .innerNav .circle .line:hover {
+  transition: 0.3s opacityNav cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.nav .innerNav .circle:hover .line::before {
+  transform: translateY(8px) translateX(5.5px);
+  transition: 0.4s all ease;
+}
+
+.nav .innerNav .fa-facebook-f {
+  font-size: 1.8vw;
+  height: 1.8vw;
+  width: 50%;
+  margin: 0vh 0vw 1.5vw 0.7vw;
+  position: relative;
+  left: 15.5%;
+}
+
+.nav .innerNav .calen .point1 {
+  display: block;
+  opacity: 0%;
+  background-color: black;
+  font-family: "Raisonne";
+  padding: 0.3vh 0vw 1vh 0.7vw;
+  font-size: 1.1vw;
+  font-weight: bolder;
+  height: 3.9vh;
+  width: 6.5vw;
+  position: absolute;
+  left: 103%;
+  top: 23.5%;
+  transition: 0.3s ease all;
+  border-radius: 4px;
+  -webkit-animation: pointOut 0.3s ease forwards;
+          animation: pointOut 0.3s ease forwards;
+}
+
+.nav .innerNav .inst .point {
+  display: block;
+  background-color: black;
+  font-family: "Raisonne";
+  padding: 0.4vh 0vw 1vh 0.8vw;
+  font-size: 1.1vw;
+  height: 3.9vh;
+  width: 7.3vw;
+  position: absolute;
+  left: 104%;
+  top: 32.5%;
+  transition: 0.3s ease all;
+  border-radius: 4px;
+  -webkit-animation: pointOut 0.3s ease forwards;
+          animation: pointOut 0.3s ease forwards;
+}
+
+.nav .innerNav .search .point2 {
+  display: block;
+  opacity: 0%;
+  background-color: black;
+  font-family: "Raisonne";
+  padding: 0.3vh 0vw 1vh 0.7vw;
+  font-size: 1.1vw;
+  height: 3.9vh;
+  width: 10vw;
+  position: absolute;
+  left: 104%;
+  top: 56%;
+  transition: 0.3s ease all;
+  border-radius: 4px;
+}
+
+.nav .innerNav .map .point3 {
+  display: block;
+  opacity: 0%;
+  background-color: black;
+  font-family: "Raisonne";
+  padding: 0.3vh 0vw 1vh 0.7vw;
+  font-size: 1.1vw;
+  height: 3.9vh;
+  width: 3.5vw;
+  position: absolute;
+  left: 104%;
+  top: 65%;
+  transition: 0.3s ease all;
+  border-radius: 4px;
+  -webkit-animation: pointOut 0.3s ease forwards;
+          animation: pointOut 0.3s ease forwards;
+}
+
+.nav .innerNav .calen .fa-facebook-f:hover ~ .point1 {
+  -webkit-animation: point 0.3s ease forwards;
+          animation: point 0.3s ease forwards;
+}
+
+.nav .innerNav .inst .fa-instagram:hover ~ .point {
+  -webkit-animation: point 0.3s ease forwards;
+          animation: point 0.3s ease forwards;
+}
+
+.nav .innerNav .search .fa-search:hover ~ .point2 {
+  -webkit-animation: point 0.3s ease forwards;
+          animation: point 0.3s ease forwards;
+}
+
+.nav .innerNav .map .fa-map-marker-alt:hover ~ .point3 {
+  -webkit-animation: point 0.3s ease forwards;
+          animation: point 0.3s ease forwards;
+}
+
+.aws-container .aws-search-form {
+  width: 100%;
+  height: 3vh;
+  background-color: black;
+}
+
+.aws-container .aws-search-field {
+  width: 99%;
+  max-width: 100%;
+  color: white;
+  padding: 6px;
+  background-color: black;
+  line-height: 30px;
+  display: block;
+  font-size: 1.2vw;
+  position: relative;
+  z-index: 2;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  height: 100%;
+  margin: 0 !important;
+}
+
+.aws-container {
+  position: relative;
+  right: 4.5%;
+}
+
+.aws-container .aws-search-form .aws-wrapper {
+  padding-top: 0.3vh;
+}
+
+.aws-container .aws-search-form .aws-wrapper input:focus {
+  background-color: #111;
+}
+
+#aws-search-result-1 {
+  position: absolute;
+  margin-top: 1vh !important;
+}
+
+.nav .innerNav .point::before {
+  content: "";
+  position: absolute;
+  right: 90%;
+  top: 24%;
+  display: inline;
+  height: 2vh;
+  width: 1vw;
+  background-color: black;
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+          clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+  transition: 0.3s ease all;
+}
+
+.nav .innerNav .point1::before {
+  content: "";
+  position: absolute;
+  right: 89%;
+  top: 25%;
+  display: inline;
+  height: 2vh;
+  width: 1vw;
+  background-color: black;
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+          clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+  transition: 0.3s ease all;
+}
+
+.nav .innerNav .point2::before {
+  content: "";
+  position: absolute;
+  right: 93%;
+  top: 27%;
+  display: inline;
+  height: 2vh;
+  width: 1vw;
+  background-color: black;
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+          clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+}
+
+.nav .innerNav .point3::before {
+  content: "";
+  position: absolute;
+  right: 78.5%;
+  top: 27%;
+  display: inline;
+  height: 2vh;
+  width: 1vw;
+  background-color: black;
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+          clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+}
+
+.nav .innerNav .fa-instagram {
+  margin: 2vh 0vw 2.3vw 1.25vw;
+  font-size: 1.8vw;
+}
+
+.nav .innerNav .fa-search {
+  font-size: 1.6vw;
+  margin: 0vh 0vw 2.3vw 1.25vw;
+}
+
+.nav .innerNav .fa-map-marker-alt {
+  padding: 0 0 0 1.3vw;
+  font-size: 1.8vw;
+}
+
+.open {
+  height: 57.7vh;
+  transition: 0.1s all ease;
+  background-color: #F1D2C8 !important;
+}
+
+.open .head {
+  display: flex;
+  margin-top: 4vh;
+  align-items: center;
+}
+
+.open .head .title {
+  color: black;
+  position: relative;
+  left: 45%;
+  font-family: "Raisonne", sans-serif;
+  letter-spacing: -0.02vw;
+  transform: scale(1.15, 1.12);
+  font-weight: 700;
+  font-size: 1.7vw;
+  text-align: center;
+  margin-left: 2.5vw;
+  padding-top: 1.2vh;
+  word-spacing: -0.2vw;
+}
+
+.open .head .title a {
+  color: black !important;
+  text-decoration: none;
+}
+
+.open .head .title .a {
+  margin-bottom: -2.5vh;
+}
+
+.open .head .title .b {
+  transform: rotateZ(180deg);
+}
+
+.open .head .play {
+  position: relative;
+  left: 83%;
+  font-family: "Rationale", sans-serif;
+  font-weight: 700;
+  font-size: 1.8vw;
+}
+
+.woocommerce-form-coupon-toggle {
+  display: none;
+}
+
+.woocommerce-checkout {
+  background-color: #a385bd;
+  margin-left: 24vw;
+  padding: 4vh;
+  width: 56%;
+  font-family: "Raisonne";
+  margin-bottom: 2vh;
+}
+
+.woocommerce-checkout button {
+  cursor: pointer;
+}
+
+.woocommerce-checkout input {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+.woocommerce-checkout .woocommerce-input-wrapper {
+  margin-left: 1vw;
+}
+
+.woocommerce-checkout .select2-container--default .select2-selection--single {
+  width: 9vw;
+}
+
+.woocommerce-checkout .woocommerce-billing-fields__field-wrapper {
+  display: grid;
+  grid-template-columns: 30vw 22vw;
+  grid-template-rows: 20% 20% 24% 23%;
+}
+
+.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .woocommerce-input-wrapper {
+  margin-left: 2vw;
+}
+
+.woocommerce-checkout .woocommerce-billing-fields__field-wrapper .woocommerce-checkout-payment {
+  width: 50%;
+  margin-top: 6vh;
+}
+
+.woocommerce-checkout .woocommerce-additional-fields {
+  margin-top: 5vh;
+}
+
+.woocommerce-checkout .woocommerce-additional-fields textarea {
+  cursor: pointer;
+  width: 50vw;
+}
+
+.woocommerce-checkout .woocommerce-checkout-payment {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 60%;
+}
+
+.woocommerce-checkout table {
+  width: 60%;
+}
+
+.woocommerce-checkout table td {
+  height: 17vh;
+}
+
+.product {
+  position: relative;
+  left: 57%;
+  top: -90vh;
+  width: 36%;
+}
+
+.product img {
+  width: 55%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .nav {
+    height: 50%;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    /* Stay in place */
+    top: 93.3%;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    padding-top: 60px;
+    transition: 0.4s all ease;
+    padding-top: 1vh;
+  }
+
+  .nav .innerNav {
+    display: flex;
+    padding: 0vh 0vw 5vh 0vw;
+  }
+
+  .nav .innerNav .search .point2 {
+    display: block;
+    opacity: 0%;
+    background-color: black;
+    font-family: "Raisonne";
+    padding: 0.3vh 0vw 1vh 0.7vw;
+    font-size: 1.1vw;
+    height: 3.9vh;
+    width: 70vw;
+    position: absolute;
+    left: 26%;
+    top: 25%;
+    transition: 0.3s ease all;
+    border-radius: 4px;
+  }
+
+  .nav .innerNav .circle {
+    width: 16.65vw;
+    height: 15.7vw;
+    background-color: #F1D2C8;
+    cursor: pointer;
+    border: 5.1px #111 solid;
+    border-radius: 50%;
+    position: relative;
+    top: -3vh;
+    left: 3%;
+    margin-left: 10.2vw;
+    transition: 0.5s all ease;
+  }
+
+  .nav .innerNav .circle .line {
+    border: 1.6px solid black;
+    position: relative;
+    top: 58%;
+    left: 20%;
+    transform: translateY(-13px);
+    width: 30px;
+    height: 2px;
+    transition: 0.4s all ease;
+  }
+
+  .nav .innerNav .circle .line::before {
+    content: "";
+    border: 2px solid black;
+    transform: translateY(8px) translateX(-2px);
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    transition: 0.4s all ease;
+  }
+
+  .nav .innerNav .circle .line::after {
+    content: "";
+    border: 1.6px solid black;
+    transform: translateY(18.5px) translateX(-2px);
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    transition: 0.4s all ease;
+  }
+
+  .nav .innerNav .fa-facebook-f {
+    margin: 0vh 0vw 0.5vw 7.7vw;
+    font-size: 7.9vw;
+    position: relative;
+    top: -0.5%;
+  }
+
+  .nav .innerNav .fa-instagram {
+    margin: 0vh 0vw 2.3vw 14.25vw;
+    font-size: 8vw;
+    position: relative;
+    top: -0.5%;
+  }
+
+  .nav .innerNav .fa-search {
+    font-size: 7vw;
+    margin: 0.2vh 0vw 2.3vw 9.2vw;
+  }
+
+  .nav .innerNav .fa-map-marker-alt {
+    font-size: 7vw;
+    margin: 0.2vh 0vw 2.3vw 9.2vw;
+  }
+
+  .nav .innerNav .search .fa-search:hover ~ .point2 {
+    -webkit-animation: point 0.3s ease forwards;
+            animation: point 0.3s ease forwards;
+  }
+
+  .nav .innerNav .map .fa-map-marker-alt:hover ~ .point3 {
+    -webkit-animation: point 0.3s ease forwards;
+            animation: point 0.3s ease forwards;
+  }
+
+  .aws-container {
+    position: relative;
+    right: 4.5%;
+    top: -21vh;
+  }
+
+  .aws-container .aws-search-form {
+    width: 100%;
+    height: 7vh;
+    background-color: black;
+    border-radius: 15px;
+  }
+
+  .aws-container .aws-search-field {
+    width: 83%;
+    max-width: 100%;
+    color: white;
+    padding: 6px;
+    left: 9%;
+    background-color: black;
+    line-height: 30px;
+    display: block;
+    font-size: 6.2vw;
+    position: relative;
+    z-index: 2;
+    /* border: none; */
+    outline: none;
+    -webkit-appearance: none;
+    height: 100%;
+    margin: 0 !important;
+    border-radius: 35px;
+  }
+
+  .aws-container {
+    position: relative;
+    right: 4.5%;
+  }
+
+  .aws-container .aws-search-form .aws-wrapper {
+    padding-top: 0.3vh;
+  }
+
+  .aws-container .aws-search-form .aws-wrapper input:focus {
+    background-color: black;
+  }
+
+  #aws-search-result-1 {
+    position: absolute;
+    margin-top: -26vh !important;
+  }
+
+  .nav .innerNav .point::before {
+    content: "";
+    position: absolute;
+    right: 90%;
+    top: 24%;
+    display: inline;
+    height: 2vh;
+    width: 1vw;
+    background-color: black;
+    -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+    transition: 0.3s ease all;
+  }
+
+  .nav .innerNav .point1::before {
+    content: "";
+    position: absolute;
+    right: 89%;
+    top: 25%;
+    display: inline;
+    height: 2vh;
+    width: 1vw;
+    background-color: black;
+    -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+    transition: 0.3s ease all;
+  }
+
+  .nav .innerNav .point2::before {
+    content: "";
+    position: absolute;
+    right: 93%;
+    top: 27%;
+    display: inline;
+    height: 2vh;
+    width: 1vw;
+    background-color: black;
+    -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+            clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 40% 100%, 0% 50%, 40% 0);
+  }
+
+  .open {
+    height: 36.2vh;
+    transition: 0.1s all ease;
+    background-color: #F1D2C8 !important;
+  }
+
+  .open .head {
+    display: flex;
+    margin-top: 3vh;
+    align-items: center;
+  }
+
+  .open .head .play {
+    position: relative;
+    left: 83%;
+    font-family: "Rationale", sans-serif;
+    font-weight: 700;
+    font-size: 1.8vw;
+  }
+
+  .open .head .title {
+    color: black;
+    position: relative;
+    left: 31%;
+    font-family: "Raisonne", sans-serif;
+    letter-spacing: -0.02vw;
+    transform: scale(1.15, 1.12);
+    font-weight: 700;
+    font-size: 5.7vw;
+    text-align: center;
+    margin-left: 2.5vw;
+    padding-top: 1.2vh;
+    word-spacing: -0.2vw;
+  }
+
+  .open .head .title .a {
+    margin-bottom: -2.3vh;
+  }
+
+  .open .head .title .b {
+    transform: rotateZ(180deg);
+  }
+
+  .woocommerce-checkout {
+    width: 100%;
+    margin-left: 0vw;
+    padding: 1vh;
+    font-family: "Raisonne";
+  }
+
+  .woocommerce-checkout .woocommerce-input-wrapper {
+    margin-left: 1vw;
+  }
+
+  .woocommerce-checkout .select2-container--default .select2-selection--single {
+    width: 30vw;
+  }
+
+  .woocommerce-checkout .woocommerce-billing-fields__field-wrapper {
+    display: block;
+  }
+
+  .woocommerce-checkout .woocommerce-billing-fields__field-wrapper .woocommerce-input-wrapper {
+    margin-left: 2vw;
+  }
+
+  .woocommerce-checkout .woocommerce-billing-fields__field-wrapper .woocommerce-checkout-payment {
+    width: 50%;
+    margin-top: 6vh;
+  }
+
+  .woocommerce-checkout .woocommerce-additional-fields {
+    margin-top: 5vh;
+  }
+
+  .woocommerce-checkout .woocommerce-additional-fields textarea {
+    width: 85vw;
+    height: 20vh;
+  }
+
+  .woocommerce-checkout .woocommerce-checkout-payment {
+    margin-top: 50vh;
+    margin-bottom: 20vh;
+    width: 90%;
+  }
+
+  table {
+    width: 75%;
+  }
+
+  .product {
+    position: absolute;
+    left: 3%;
+    top: 199vh;
+    width: 73%;
+  }
+
+  .product img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
